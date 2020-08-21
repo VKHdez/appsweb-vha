@@ -31,7 +31,7 @@ nav h1{
 }
 
 
-h2 {
+nav h2 {
     font-size: 1.8em;
     font-weight: lighter;
 
@@ -40,13 +40,19 @@ h2 {
 
 /****** MAIN *******/
 
-main{
-    background-color: #75b3df;
+.main-activities, main{
+    max-width: 1000px;
+    margin: auto;
 
     padding: 20px;
     box-sizing: border-box;
-
 }
+
+.main-activities{
+    background-color: #efefef;
+}
+
+
 
 /**************************************
 ***************************************
@@ -59,6 +65,7 @@ main{
 /****** UL > HOMEWORK CONTAINER *******/
 
 .homework-container{
+    width: 100%;
     max-width: 1000px;
     margin: auto;
 }
@@ -263,6 +270,89 @@ input {
     text-decoration: none;
 }
 
+
+/**************************************
+***************************************
+
+            ACTIVITIES SECTION
+
+***************************************
+***************************************/
+
+/************
+    ACTIVITIES HEADER SECTION
+************/
+
+.articleheader{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.articledate{
+    width: 100%;
+
+    font-size: 1.2em;
+    text-align: right;
+    line-height: 3em;
+}
+
+.articlenumber, .articletitle{
+    
+    font-size: 4em;
+    line-height: 2em;
+    font-weight: bold;
+
+    margin:0 5px;
+}
+
+.articlenumber{
+    color: #49a7de;
+}
+
+/************
+    ACTIVITIES BODY SECTION
+************/
+
+.articlebody{
+    border-top: 1px solid rgb(189, 189, 189);
+}
+
+.articleevidence, .articledescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articledescription{
+    background-color: #dadada;
+    padding: 40px 20px;
+    box-sizing: border-box;
+
+    margin-bottom: 40px;
+}
+
+.articledescription p{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.articleevidence p{
+    font-size: 1.2em;
+}
+
+.articlesubtitle{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.articleimg {
+    width: 90%;
+    margin: 20px 0;
+}
+
+
 /**************************************
 ***************************************
 
@@ -277,8 +367,9 @@ footer{
 
     width: 100%;
     height: auto;
-    background-color: #eaeaea;
+    background-color: #575757;
     
+    color: #f2f2f2;
     text-align: center;
 }
 
