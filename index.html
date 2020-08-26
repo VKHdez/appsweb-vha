@@ -6,6 +6,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/style.css">
     <link rel="stylesheet" href="css/index.css">
 
     <title>Repository</title>
@@ -13,19 +15,25 @@
 <body>
     <header>
         <nav>
-            <h1>ACTIVITIES REPOSITORY</h1>
-            <h2>Aplicaciones Web - Víctor Hernández Álvarez</h2>
+            <div class="logo-header">
+                <h1> <a href="index.html"> <span class="icon-books"></span>  ACTIVITIES REPOSITORY </a></h1>
+                <h2>Aplicaciones Web - Equipo 3</h2>
+            </div>
+
+            <ul class="menu">
+                <li><a href="notes/notes.html" class="menu-item"><span class="icon-book"> </span>Notes</a></li>
+                <li><a href="about.html" class="menu-item"><span class="icon-users"> </span>About</a></li>
+            </ul>
         </nav>
     </header>
     
-    <main>
+    <section>
         <ul class="homework-container">
-            <h3>My Subject Activities</h3>
             <li class="activities-container acc-container">
 
                 <input type="checkbox" id="act">
                 <label for="act" class="acc-title">Activities</label>
-                <span></span>
+                <span class="icon-plus"></span>
 
                 <table class="activities">
                     <thead>
@@ -36,7 +44,7 @@
 
                     <!-- Activities-->
                     <tr class="activity">
-                        <td>1</td> <td> <a href="activities/activity_template.html">Activity Example 1</a></td> <td>Activity example - small description</td>
+                        <td>1</td> <td> <a href="activities/activity1/activity1.html">Creacion de la página HTML</a></td> <td>Creación de la página donde se mostrarán los archivos hechos durante el curso</td>
                     </tr>
                 </table>
             </li>
@@ -45,7 +53,7 @@
 
                 <input type="checkbox" id="pro">
                 <label for="pro" class="acc-title">Project</label>
-                <span></span>
+                <span class="icon-plus"></span>
 
                 <table class="activities">
                     <thead>
@@ -54,43 +62,18 @@
                         </tr>
                     </thead>
                     <tr class="activity">
-                        <td>1</td> <td> <a href="activities/activity_template.html">Project Example 1</a></td> <td>Descripcion de la actividad 1</td>
+                        <td>0</td> <td> <a href="#">No Proyects Yet :(</a></td> <td>...</td>
                     </tr>
                 </table>
             </li>
         </ul>
 
-    </main>
-
-    <!-- Details Section -->
-    <section class="info">
-
-        <div class="info-content">
-            <section class="details">
-
-                <h3>About & Details</h3>
-                <p>Hi, my name is Víctor Hdez, i'm a Computer Science Student at BUAP</p>
-                <p>In this page, you'll find my current works for my "Web Applications" Subject.</p>
-
-            </section>
-            
-            
-            <section class="contact">
-
-                    <h3>Contact</h3>
-                    <p>If you wanna see my other projects, you can check my Github page :)</p>
-
-                    <ol>
-                        <li><a href="https://github.com/VKHdez/" target="_blank">---> My Github :)</a></li>
-                        <li>Or via E-mail: atlante_infinito@outlook.com</li>
-                    </ol>
-            </section>
-        </div>
-        
     </section>
 
     <footer>
-        <p>Benemérita Universidad Autónoma de Puebla - Aplicaciones Web - Víctor Hernández Álvarez - Otoño 2020</p>
+        <p>Benemérita Universidad Autónoma de Puebla - Aplicaciones Web | EQUIPO 3 - Otoño 2020</p>
+        <br>
+        <p>Made with Love and <span class="icon-html-five"></span> <span class="icon-css3"></span> | <span class="icon-github"></span> </p>
     </footer>
 </body>
 </html>
