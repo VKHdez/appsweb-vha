@@ -1,0 +1,122 @@
+*{
+	margin:0;
+	padding:0;
+
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	
+	list-style:none;
+	text-decoration:none;
+
+	/* VARIABLES */
+	--main-white-color: #fafafa;
+	--main-blue-color:  #004e63;
+
+	--main-text-color:  #1c1c1c;
+}
+/*
+ * MENU STYLES
+ * */
+nav{
+	width:100%;
+	height:80px;
+
+	position:absolute;
+
+	background-color: var(--main-white-color);
+	z-index:999;	
+}
+
+.menu-container{ height:100%; width:80%; margin:0 auto; display:flex; justify-content:space-between; }
+
+.logo{ display:flex; align-items:center; }
+.logo h2 a{color: var(--main-text-color); font-size:2em;}
+
+.buscador{ width:60%; display:flex; align-items:center; }
+.buscador input { width:100%; padding:5px; box-sizing:border-box;}
+
+.menu{ display:flex; align-items:center;}
+.menu ul{ display:flex; color: var(--main-text-color);}
+.menu ul li a{ padding:10px; display:block;}
+.nav_button a{ color:var(--main-text-color); }
+.focus_button{ background-color: #d65d24; border-radius:5%; }
+.focus_button a{color:var(--main-white-color);}
+
+/*
+ * MAIN SCREEN STYLES
+ */
+.parallax_screen{
+	height:100vh;
+	width:100vw;
+
+	overflow:hidden;
+	background: rgb(49,86,103);
+	position:relative;
+}
+
+.parallax_text{
+	top:50%;
+	left:5%;
+	position:absolute;
+
+	color: #fff;
+}
+
+.parallax_text h1{
+	font-size:4em;
+}
+
+.parallax_screen > img{
+	width:100vw;
+	height: auto;
+ 	opacity:0.3;
+}
+
+/*
+ * FOOTER STYLE
+ */
+
+ footer {
+	position:absolute;
+	bottom:0;
+
+	width: 100%;
+	height: 30px;
+
+	background-color: var(--main-blue-color) ;
+
+	line-height: 25px;
+	color:var(--main-white-color);
+	text-align:center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
